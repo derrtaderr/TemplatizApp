@@ -34,15 +34,15 @@ export const Footer = () => {
   const socials = [
     {
       name: "Twitter",
-      href: "https://twitter.com/mannupaaji",
+      href: "https://twitter.com/templatiz",
     },
     {
       name: "LinkedIn",
-      href: "https://linkedin.com/in/manuarora28",
+      href: "https://linkedin.com/in/templatiz",
     },
     {
       name: "GitHub",
-      href: "https://github.com/manuarora700",
+      href: "https://github.com/derrtaderr",
     },
   ];
   return (
@@ -53,7 +53,7 @@ export const Footer = () => {
             <div className="mr-4  md:flex mb-4">
               <Logo />
             </div>
-            <div>Copyright &copy; 2024 Every Labs</div>
+            <div>Copyright &copy; 2025 Templatiz</div>
             <div className="mt-2">All rights reserved</div>
           </div>
           <div className="grid grid-cols-3 gap-10 items-start mt-10 md:mt-0">
