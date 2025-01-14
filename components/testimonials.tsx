@@ -28,158 +28,136 @@ interface Testimonial {
 
 const testimonials = [
   {
-    name: "Manu Arora",
-    quote:
-      "What a fantastic AI Every AI is, I just love it. It has completely transformed the way I approach problems and develop solutions.",
+    name: "Emma Harper",
+    quote: "I can't wait to see how Templatiz transforms my content creation process. Everything in one place is exactly what I need!",
     src: "https://i.pravatar.cc/150?img=1",
-    designation: "Tech Innovator & Entrepreneur",
+    designation: "Content Creator",
   },
   {
-    name: "Tyler Durden",
-    quote:
-      "I made a soap with the help of AI, it was so easy to use. I'm so glad this happened because it revolutionized my entire business model and production process.",
+    name: "James Taylor",
+    quote: "The idea of turning a blog into videos and social posts automatically is groundbreaking. I'm all in for the beta!",
     src: "https://i.pravatar.cc/150?img=2",
-    designation: "Creative Director & Business Owner",
+    designation: "Digital Entrepreneur",
   },
   {
-    name: "Alice Johnson",
-    quote:
-      "This AI has transformed the way I work! It's like having a brilliant assistant who knows exactly what I need before I even ask.",
+    name: "Sophia Adams",
+    quote: "Finally, a tool that understands how important my brand voice is. I'm so excited to get started.",
     src: "https://i.pravatar.cc/150?img=3",
-    designation: "Senior Software Engineer",
+    designation: "Brand Strategist",
   },
   {
-    name: "Bob Smith",
-    quote:
-      "Absolutely revolutionary, a game-changer for our industry. It has streamlined our processes and enhanced our productivity dramatically.",
+    name: "Liam Bennett",
+    quote: "I've been waiting for something like this. Templatiz feels like the future of content creation.",
     src: "https://i.pravatar.cc/150?img=4",
-    designation: "Industry Analyst",
+    designation: "Social Media Manager",
   },
   {
-    name: "Cathy Lee",
-    quote:
-      "I can't imagine going back to how things were before this AI. It has not only improved my work efficiency but also my daily life.",
+    name: "Olivia Carter",
+    quote: "Joining this beta feels like being part of a movement. I can't wait to shape the future of content creation with Templatiz.",
     src: "https://i.pravatar.cc/150?img=5",
-    designation: "Product Manager",
+    designation: "Marketing Director",
   },
   {
-    name: "David Wright",
-    quote:
-      "It's like having a superpower! This AI tool has given us the ability to do things we never thought were possible in our field.",
+    name: "Noah Mitchell",
+    quote: "If this can save me hours every week, I'm sold. Let's make content creation effortless!",
     src: "https://i.pravatar.cc/150?img=6",
-    designation: "Research Scientist",
+    designation: "Content Strategist",
   },
   {
-    name: "Eva Green",
-    quote:
-      "The efficiency it brings is unmatched. It's a vital tool that has helped us cut costs and improve our end product significantly.",
+    name: "Mia Walker",
+    quote: "As a marketer, I'm always looking for ways to streamline workflows. Templatiz is a no-brainer.",
     src: "https://i.pravatar.cc/150?img=7",
-    designation: "Operations Director",
+    designation: "Marketing Manager",
   },
   {
-    name: "Frank Moore",
-    quote:
-      "A robust solution that fits perfectly into our workflow. It has enhanced our team's capabilities and allowed us to tackle more complex projects.",
+    name: "Ethan Ramirez",
+    quote: "Repurposing content from one platform to another is such a headache—Templatiz solves it. Count me in!",
     src: "https://i.pravatar.cc/150?img=8",
-    designation: "Project Manager",
+    designation: "Digital Creator",
   },
   {
-    name: "Grace Hall",
-    quote:
-      "It's incredibly intuitive and easy to use. Even those without technical expertise can leverage its power to improve their workflows.",
+    name: "Isabella White",
+    quote: "Voice cloning and template personalization? This is what every creator has been dreaming of.",
     src: "https://i.pravatar.cc/150?img=9",
+    designation: "Content Producer",
+  },
+  {
+    name: "Ava Thompson",
+    quote: "I'm thrilled to be part of the beta. Templatiz is exactly what I've been looking for to grow my personal brand.",
+    src: "https://i.pravatar.cc/150?img=10",
+    designation: "Personal Brand Coach",
+  },
+  {
+    name: "William Garcia",
+    quote: "Being able to create videos from blogs without external tools is a game-changer. I can't wait to test it!",
+    src: "https://i.pravatar.cc/150?img=11",
+    designation: "Video Content Creator",
+  },
+  {
+    name: "Sophia Martinez",
+    quote: "I've signed up for a lot of tools, but this one genuinely excites me. Templatiz feels like the next big thing.",
+    src: "https://i.pravatar.cc/150?img=12",
+    designation: "Digital Marketing Consultant",
+  },
+  {
+    name: "Alexander Brown",
+    quote: "Saving time while keeping my content authentic? Yes, please. This beta is going to be amazing.",
+    src: "https://i.pravatar.cc/150?img=13",
+    designation: "Content Marketing Manager",
+  },
+  {
+    name: "Charlotte Davis",
+    quote: "I've followed tools like this for years, and Templatiz is a step ahead. I'm so ready to start!",
+    src: "https://i.pravatar.cc/150?img=14",
+    designation: "Social Media Strategist",
+  },
+  {
+    name: "Henry Wilson",
+    quote: "Simplifying content creation and video production? I can already see the value in Templatiz.",
+    src: "https://i.pravatar.cc/150?img=15",
+    designation: "Content Director",
+  },
+  {
+    name: "Amelia Evans",
+    quote: "It's rare to find a tool that promises so much and delivers even more. Can't wait to get early access!",
+    src: "https://i.pravatar.cc/150?img=16",
+    designation: "Digital Strategist",
+  },
+  {
+    name: "Lucas Johnson",
+    quote: "From blog to social to video, all in one place? Templatiz is the dream content tool.",
+    src: "https://i.pravatar.cc/150?img=17",
+    designation: "Content Creator",
+  },
+  {
+    name: "Isabelle Moore",
+    quote: "I've been struggling to keep up with consistent posting—Templatiz seems like the perfect solution.",
+    src: "https://i.pravatar.cc/150?img=18",
+    designation: "Social Media Manager",
+  },
+  {
+    name: "Jackson Scott",
+    quote: "I've tried so many platforms, and none have excited me as much as Templatiz. Let's go!",
+    src: "https://i.pravatar.cc/150?img=19",
+    designation: "Digital Content Creator",
+  },
+  {
+    name: "Grace Harris",
+    quote: "Content creation made smarter and faster? I'm in. This beta is going to be incredible.",
+    src: "https://i.pravatar.cc/150?img=20",
     designation: "Marketing Specialist",
   },
   {
-    name: "Henry Ford",
-    quote:
-      "It has saved us countless hours. Highly recommended for anyone looking to enhance their efficiency and productivity.",
-    src: "https://i.pravatar.cc/150?img=10",
-    designation: "Operations Analyst",
-  },
-  {
-    name: "Ivy Wilson",
-    quote:
-      "A must-have tool for any professional. It's revolutionized the way we approach problem-solving and decision-making.",
-    src: "https://i.pravatar.cc/150?img=11",
-    designation: "Business Consultant",
-  },
-  {
-    name: "Jack Brown",
-    quote:
-      "The results are always impressive. This AI has helped us to not only meet but exceed our performance targets.",
-    src: "https://i.pravatar.cc/150?img=12",
-    designation: "Performance Manager",
-  },
-  {
-    name: "Kathy Adams",
-    quote:
-      "It helps us achieve what was once thought impossible. The AI's capabilities are groundbreaking and have opened new avenues for us.",
-    src: "https://i.pravatar.cc/150?img=13",
-    designation: "Innovation Lead",
-  },
-  {
-    name: "Leo Carter",
-    quote:
-      "Transformative technology with real impact. It has streamlined our operations and brought unprecedented efficiency to our processes.",
-    src: "https://i.pravatar.cc/150?img=14",
-    designation: "Technology Strategist",
-  },
-  {
-    name: "Mia Turner",
-    quote:
-      "It's simply revolutionary! The way it integrates with our existing systems and enhances them is nothing short of miraculous.",
-    src: "https://i.pravatar.cc/150?img=15",
-    designation: "Systems Integrator",
-  },
-  {
-    name: "Nathan Hill",
-    quote:
-      "The best investment we've made in years. It's not just a tool; it's a game-changer that has propelled our business forward.",
-    src: "https://i.pravatar.cc/150?img=16",
-    designation: "Investment Analyst",
-  },
-  {
-    name: "Olivia Scott",
-    quote:
-      "It consistently exceeds our expectations. Its adaptability and precision make it indispensable for our daily operations.",
-    src: "https://i.pravatar.cc/150?img=17",
-    designation: "Quality Assurance Manager",
-  },
-  {
-    name: "Peter White",
-    quote:
-      "A seamless integration into our daily tasks. It has enhanced our productivity and allowed us to focus on more strategic initiatives.",
-    src: "https://i.pravatar.cc/150?img=18",
-    designation: "Strategic Planner",
-  },
-  {
-    name: "Quinn Taylor",
-    quote:
-      "It's a game-changer for our business. The insights it provides are invaluable and have driven substantial growth for us.",
-    src: "https://i.pravatar.cc/150?img=19",
-    designation: "Growth Manager",
-  },
-  {
-    name: "Rachel Black",
-    quote:
-      "The support team is as impressive as the technology itself. They ensure we maximize the utility of the AI in our operations.",
-    src: "https://i.pravatar.cc/150?img=20",
-    designation: "Client Support Coordinator",
-  },
-  {
-    name: "Samuel Lee",
-    quote:
-      "It's the future, now. Adopting this AI has put us years ahead of the competition in terms of operational efficiency and innovation.",
+    name: "Oliver Rodriguez",
+    quote: "I'm excited to see how Templatiz will save me time while maintaining my authenticity. This is huge!",
     src: "https://i.pravatar.cc/150?img=21",
-    designation: "Futurist",
+    designation: "Brand Developer",
   },
   {
-    name: "Tina Brooks",
-    quote:
-      "It has completely changed the way we operate. The AI's ability to analyze and optimize our processes is phenomenal.",
+    name: "Lily Perez",
+    quote: "Joining the beta is a no-brainer. I can already see how Templatiz will transform my workflow.",
     src: "https://i.pravatar.cc/150?img=22",
-    designation: "Process Analyst",
+    designation: "Content Strategist",
   },
 ];
 
