@@ -2,21 +2,35 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { cn } from "@/lib/utils";
 
-export const Logo = () => {
+interface LogoProps extends React.ComponentPropsWithoutRef<"div"> {
+  showText?: boolean;
+  imageWidth?: number;
+  imageHeight?: number;
+}
+
+export const Logo = ({ 
+  className, 
+  showText = true, 
+  imageWidth = 24,
+  imageHeight = 20,
+  ...props 
+}: LogoProps) => {
   return (
-    <Link
-      href="/"
-      className="font-normal flex space-x-2 items-center text-sm mr-4  text-black px-2 py-1  relative z-20"
-    >
-      <Image 
-        src="/Templatiz logo.png"
-        alt="Templatiz Logo"
-        width={24}
-        height={20}
-        className="dark:invert"
-      />
-      <span className="font-medium text-black dark:text-white">Templatiz</span>
-    </Link>
+    <div className={cn("relative z-20 flex items-center justify-center", className)} {...props}>
+      <Link
+        href="/"
+        className="flex items-center justify-center"
+      >
+        <Image 
+          src="/Templatiz Logo 1.png"
+          alt="Templatiz Logo"
+          width={imageWidth}
+          height={imageHeight}
+        />
+        {showText && <span className="font-medium text-black dark:text-white ml-2">Templatiz</span>}
+      </Link>
+    </div>
   );
 };
