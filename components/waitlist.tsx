@@ -54,6 +54,10 @@ export function SignupForm() {
     setError(null);
     
     try {
+      if (!supabase) {
+        throw new Error('Unable to connect to database');
+      }
+
       const { data, error } = await supabase
         .from('waitlist')
         .insert([
