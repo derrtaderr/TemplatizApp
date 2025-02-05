@@ -4,7 +4,6 @@ import { Heading } from "@/components/heading";
 import { Subheading } from "@/components/subheading";
 import { Pricing } from "@/components/pricing";
 import { PricingTable } from "./pricing-table";
-import { Companies } from "@/components/companies";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -31,7 +30,6 @@ export default function PricingPage() {
         </div>
         <Pricing />
         <PricingTable />
-        <Companies />
       </Container>
     </div>
   );
