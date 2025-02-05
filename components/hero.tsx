@@ -67,7 +67,7 @@ export const Hero = () => {
         className="text-center mt-6 text-base md:text-xl text-muted dark:text-muted-dark max-w-3xl mx-auto relative z-10"
       >
         <Balancer>
-        Effortlessly turn viral posts into personalized templates that match your brand's voice and speak directly to your target audience.
+        Transform a single blog into a full content ecosystem—videos, Linkedin posts, Twitter threads, and more. Personalized for founders and entrepreneurs who value authenticity and efficiency.
         </Balancer>
       </motion.p>
       <motion.div
@@ -92,7 +92,7 @@ export const Hero = () => {
         <div className="absolute inset-x-0 bottom-0 h-40 w-full bg-gradient-to-b from-transparent via-white to-white dark:via-black/50 dark:to-black scale-[1.1] pointer-events-none" />
         <div className="p-2 bg-white dark:bg-black dark:border-neutral-700 border border-neutral-200 rounded-[24px]">
           <Image
-            src="/templates.png"
+            src="/Templatiz templates.png"
             alt="header"
             width={1920}
             height={1080}

@@ -18,7 +18,7 @@ export function Features() {
         </h2>
       </Header>
       <p className="max-w-lg text-sm text-neutral-600 text-center mx-auto mt-4 dark:text-neutral-400">
-      Learn from viral posts, personalize templates in your brand's voice, and maintain a consistent, high-impact content flow across platforms.
+      Turn ideas into thought leadership with AI-powered content creation. Blogs, posts, threads, and videos—automatically optimized for every platform.
       </p>
       <div className="mt-20  grid cols-1 md:grid-cols-5 gap-4 md:auto-rows-[25rem] max-w-7xl mx-auto">
         <Card className="flex flex-col justify-between md:col-span-3">
@@ -35,15 +35,15 @@ export function Features() {
 
         <Card className="flex flex-col justify-between md:col-span-2">
           <CardContent className="h-40">
-            <CardTitle>Intelligent Content Repurposing</CardTitle>
+            <CardTitle>Blog to Multi-Platform Content</CardTitle>
             <CardDescription>
-            Let AI write your blog then repurpose it into LinkedIn posts, Twitter threads, and YouTube videos and shorts—complete with your AI voice clone.
+            Turn a single blog post into a full suite of platform-ready content. LinkedIn posts, Twitter threads, and YouTube videos—all optimized for each platform by AI.
             </CardDescription>
           </CardContent>
           <CardSkeletonBody>
             <div className="w-full h-full p-4 rounded-lg bg-neutral-100 border border-neutral-200 dark:bg-neutral-800 dark:border-neutral-700 ml-6 mt-2">
               <Image
-                src="/dashboard.png"
+                src="/Content Suite.png"
                 alt="Dashboard"
                 width={500}
                 height={500}
@@ -68,13 +68,13 @@ export function Features() {
           <CardContent className="h-40">
             <CardTitle>Your Voice, Your Audience</CardTitle>
             <CardDescription>
-            Each template is intelligently adapted to your brand style and audience preferences, ensuring every post feels authentic and impactful.
+            Let AI match every post to your unique voice and directly target your ICP and industry—aligned with the product or service you offer.
             </CardDescription>
           </CardContent>
           <CardSkeletonBody>
             <div className="w-full h-full p-4 rounded-lg bg-neutral-100 border border-neutral-200 dark:bg-neutral-800 dark:border-neutral-700 ml-6 mt-2">
               <Image
-                src="/dashboard.png"
+                src="/schedule dashboard.png"
                 alt="Dashboard"
                 width={500}
                 height={500}

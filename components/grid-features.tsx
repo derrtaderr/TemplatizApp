@@ -63,10 +63,10 @@ export const GridFeatures = () => {
     <div className="w-full py-20">
       <div className="text-center mb-16">
         <h2 className="font-sans text-bold text-xl text-center md:text-4xl w-fit mx-auto font-bold tracking-tight text-neutral-800 dark:text-neutral-100">
-          Everything You Need to Create Better Content
+        Everything You Need to Create, Scale, and Manage Content
         </h2>
         <p className="max-w-lg text-sm text-neutral-600 text-center mx-auto mt-4 dark:text-neutral-400">
-        Streamline your content creation process with powerful tools designed to help you create, manage, and scale your social media presence while maintaining your brand’s authenticity.
+        Simplify your content strategy with tools to create, repurpose, and publish multi-platform content, all tailored to your voice and audience.
         </p>
       </div>
 
