@@ -55,7 +55,8 @@ export function SignupForm() {
     
     try {
       if (!supabase) {
-        throw new Error('Unable to connect to database');
+        console.error('Supabase client not initialized. URL:', process.env.NEXT_PUBLIC_SUPABASE_URL);
+        throw new Error('Unable to connect to database - client not initialized');
       }
 
       const { data, error } = await supabase
@@ -74,9 +75,9 @@ export function SignupForm() {
       console.log('Inserted data:', data);
       setIsSuccess(true);
       form.reset();
-    } catch (e) {
-      console.error('Error:', e);
-      setError('Failed to join waitlist. Please try again.');
+    } catch (e: any) {
+      console.error('Detailed error:', e);
+      setError(e?.message || 'Failed to join waitlist. Please try again.');
     } finally {
       setIsLoading(false);
     }
