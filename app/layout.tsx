@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   openGraph: {
     images: ["https://templatized.io/banner.png"],
   },
+  icons: {
+    icon: "/Templatiz Logo 1.png",
+    shortcut: "/Templatiz Logo 1.png",
+    apple: "/Templatiz Logo 1.png",
+  },
 };
 
 export default function RootLayout({
