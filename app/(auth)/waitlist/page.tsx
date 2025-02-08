@@ -6,11 +6,11 @@ import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Signup - Everything AI",
+  title: "Join Waitlist - Templatiz",
   description:
-    "Everything AI is a platform that provides a wide range of AI tools and services to help you stay on top of your business. Generate images, text and everything else that you need to get your business off the ground.",
+    "Be among the first to experience Templatiz. Join our waitlist to get early access and lifetime benefits for our AI-powered content creation platform.",
   openGraph: {
-    images: ["https://ai-saas-template-aceternity.vercel.app/banner.png"],
+    images: ["https://templatized.io/banner.png"],
   },
 };
 
