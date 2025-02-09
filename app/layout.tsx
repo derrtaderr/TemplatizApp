@@ -6,16 +6,16 @@ import { ViewTransitions } from "next-view-transitions";
 import { ThemeProvider } from "@/context/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Templatiz",
+  title: "Templatiz - The All-in-One Content OS",
   description:
-    "Transform your content into a full ecosystem. Create, repurpose, and share across platforms with AI-powered tools that maintain your authentic voice.",
+    "Templatize is your all-in-one Content OS. Discover top-performing posts, create templates, and publish with AI-powered tools designed to save time and scale your brand across platforms.",
   openGraph: {
     images: ["https://templatized.io/banner.png"],
   },
   icons: {
-    icon: "/Templatiz Logo 1.png",
-    shortcut: "/Templatiz Logo 1.png",
-    apple: "/Templatiz Logo 1.png",
+    icon: "/favicon-16x16.png",
+    shortcut: "/favicon-16x16.png",
+    apple: "/favicon-16x16.png",
   },
 };
 
