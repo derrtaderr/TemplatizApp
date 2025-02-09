@@ -17,7 +17,7 @@ export function Features() {
         Content Creation Made Smarter
         </h2>
       </Header>
-      <p className="max-w-lg text-sm text-neutral-600 text-center mx-auto mt-4 dark:text-neutral-400">
+      <p className="max-w-lg text-sm text-center mx-auto mt-4 text-neutral-800 dark:text-neutral-100">
       Why Waste Time Guessing? Let AI Turn Your Ideas Into Platform-Ready Content—FAST!
       </p>
       <div className="mt-20  grid cols-1 md:grid-cols-5 gap-4 md:auto-rows-[25rem] max-w-7xl mx-auto">
