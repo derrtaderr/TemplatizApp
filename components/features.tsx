@@ -18,7 +18,7 @@ export function Features() {
         </h2>
       </Header>
       <p className="max-w-lg text-sm text-neutral-600 text-center mx-auto mt-4 dark:text-neutral-400">
-      Turn ideas into thought leadership with AI-powered content creation. Blogs, posts, threads, and videos—automatically optimized for every platform.
+      Why Waste Time Guessing? Let AI Turn Your Ideas Into Platform-Ready Content—FAST!
       </p>
       <div className="mt-20  grid cols-1 md:grid-cols-5 gap-4 md:auto-rows-[25rem] max-w-7xl mx-auto">
         <Card className="flex flex-col justify-between md:col-span-3">
@@ -28,16 +28,16 @@ export function Features() {
           <CardContent className="h-40">
             <CardTitle>One-click Publishing</CardTitle>
             <CardDescription>
-            Publish directly to LinkedIn, Twitter, and beyond in seconds. Stop juggling tools and focus on what matters: creating content that connects and inspires.
+            No more juggling scheduling tools and platforms. Templatiz lets you post directly to LinkedIn, Twitter, and more. Schedule your posts in advance or go live with a single click
             </CardDescription>
           </CardContent>
         </Card>
 
         <Card className="flex flex-col justify-between md:col-span-2">
           <CardContent className="h-40">
-            <CardTitle>Blog to Multi-Platform Content</CardTitle>
+            <CardTitle>Templatize High-Performing Content</CardTitle>
             <CardDescription>
-            Turn a single blog post into a full suite of platform-ready content. LinkedIn posts, Twitter threads, and YouTube videos—all optimized for each platform by AI.
+            Why start from scratch when you can reverse-engineer the success of top creators?
             </CardDescription>
           </CardContent>
           <CardSkeletonBody>
@@ -55,9 +55,9 @@ export function Features() {
 
         <Card className="flex flex-col justify-between md:col-span-2">
           <CardContent className="h-40">
-            <CardTitle>Build Your Content Network</CardTitle>
+            <CardTitle>AI-Assisted Content Creation</CardTitle>
             <CardDescription>
-            Transform any viral post into your own voice. Save, adapt, and reuse templates to consistently share content that builds your authority and grows your audience.
+            Our AI fills in your templates with content tailored to your audience. Every post aligns with your Ideal Customer Profile (ICP), using your voice and message to build deeper connections.
             </CardDescription>
           </CardContent>
           <CardSkeletonBody>
@@ -66,9 +66,9 @@ export function Features() {
         </Card>
         <Card className="flex flex-col justify-between md:col-span-3">
           <CardContent className="h-40">
-            <CardTitle>Your Voice, Your Audience</CardTitle>
+            <CardTitle>Stay Organized with Your Content Library</CardTitle>
             <CardDescription>
-            Let AI match every post to your unique voice and directly target your ICP and industry—aligned with the product or service you offer.
+            Manage all your templates, drafts, and posts in one place. Templatiz keeps your entire content strategy organized, predictable, and ready to execute.
             </CardDescription>
           </CardContent>
           <CardSkeletonBody>

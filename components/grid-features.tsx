@@ -13,48 +13,48 @@ import {
 export const GridFeatures = () => {
   const features = [
     {
-      title: "Save and Personalize Viral Posts",
+      title: "Discover Top-Performing Content",
       description:
-        "Instantly capture inspiring posts with our Chrome extension. AI adapts them to your brand’s unique voice and target audience, making them ready to publish in minutes.",
+        "Why guess when you can copy success? Use our Chrome extension to instantly analyze a creator’s profile on platforms like Twitter and LinkedIn. Identify their highest-performing posts, based on engagement, and pinpoint exactly what your audience wants to see.",
       icon: <IconBookmark />,
     },
     {
-      title: "Effortless Multi-Platform Posting",
+      title: "Templatize Winning Content",
       description:
-        "Schedule and publish content seamlessly across LinkedIn, Twitter, and YouTube. Manage your entire content workflow from one platform with minimal effort.",
+        "With Templatiz, saving a post is just the beginning. Our system extracts the core structure—hooks, headlines, and calls-to-action—so you can create your own version tailored to your audience. Save these templates to your content library and reuse them to stay consistent and efficient",
       icon: <IconTemplate />,
     },
     {
-      title: "AI-Powered Templates",
+      title: "AI-Powered Content Creation",
       description:
-        "Build a library of proven templates tailored to your brand voice. Our AI ensures each post resonates with your audience for maximum impact.",
+        "Writing takes time, but not with Templatiz. AI fills your templates with personalized content, directly targeting your audience and aligned with your brand’s message. Generate multiple variations and edit on the fly—no more blank screens or writer’s block.",
       icon: <IconMessageCircle2 />,
     },
     {
-      title: "Create Once, Repurpose Everywhere",
-      description: "Write your blog directly in Templatiz, and let our AI repurpose it into LinkedIn posts, Twitter threads, YouTube Shorts, and long-form videos—all while ensuring your brand’s voice stays consistent.",
+      title: "Effortless Multi-Platform Posting",
+      description: "Publish directly to LinkedIn, Twitter, and beyond. Schedule posts in advance and sync your content strategy seamlessly across platforms—no need for multiple scheduling tools.",
       icon: <IconCloud />,
     },
     {
-      title: "Your Voice in Every Video",
-      description: "Use our voice cloning technology to add personalized voiceovers to AI-generated videos. Create YouTube Shorts and long-form videos that sound just like you.",
+      title: "Boost Your Top Posts Automatically",
+      description: "What happens after a post takes off? With Templatiz, if a post hits a certain threshold of engagement (likes, retweets, or shares), our system can automatically repost or retweet it at the optimal time to maximize growth.",
       icon: <IconChartBar />,
     },
     {
-      title: "Post with Confidence",
+      title: "Write SEO-Optimized Blogs (Coming Soon)",
       description:
-        "Plan and schedule your posts with ease. Maintain a consistent presence and eliminate the stress of last-minute content creation.",
+        "Write fully optimized blog posts that use SEO best practices to boost discoverability. Our AI analyzes your voice, industry, and target audience to ensure your content is relevant and impactful—ready to attract new visitors and leads.",
       icon: <IconUsers />,
     },
     {
-      title: "Learn What Works",
+      title: "Repurpose Blogs Into Multi-Platform Content (Coming Soon)",
       description:
-        "Build your strategy with data. Use insights from high-performing templates to refine your content and grow your authority.",
+        "Create a blog post and let Templatiz turn it into LinkedIn posts, Twitter threads, and even YouTube videos—all optimized for platform-specific engagement.",
       icon: <IconClock />,
     },
     {
-      title: "Scale Your Content Effortlessly",
-      description: "From personal brands to company updates, create a complete content ecosystem that grows with your audience and business goals.",
+      title: "AI Voice Cloning for Video Creation (Coming Soon)",
+      description: "Soon, Templatiz will allow you to generate videos with AI-cloned versions of your voice. Create personalized YouTube Shorts, reels, and explainer videos without needing hours of filming or editing.",
       icon: <IconArrowUpRight />,
     },
   ];
@@ -63,10 +63,10 @@ export const GridFeatures = () => {
     <div className="w-full py-20">
       <div className="text-center mb-16">
         <h2 className="font-sans text-bold text-xl text-center md:text-4xl w-fit mx-auto font-bold tracking-tight text-neutral-800 dark:text-neutral-100">
-        Everything You Need to Create, Scale, and Manage Content
+        Your Complete Content Operating System
         </h2>
         <p className="max-w-lg text-sm text-neutral-600 text-center mx-auto mt-4 dark:text-neutral-400">
-        Simplify your content strategy with tools to create, repurpose, and publish multi-platform content, all tailored to your voice and audience.
+        Discover, templatize, create, and publish—everything you need to dominate LinkedIn, Twitter, and beyond in one streamlined platform. No more scattered tools or wasted time.
         </p>
       </div>
 
