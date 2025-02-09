@@ -48,7 +48,7 @@ export const Hero = () => {
         }}
         className="text-2xl md:text-4xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10"
       >
-        <Balancer>The All-in-One Content OS That Saves You Time, Money, and Headaches</Balancer>
+        <Balancer>The All-in-One Content OS.</Balancer>
       </motion.h1>
       <motion.p
         initial={{
@@ -67,7 +67,7 @@ export const Hero = () => {
         className="text-center mt-6 text-base md:text-xl text-muted dark:text-muted-dark max-w-3xl mx-auto relative z-10"
       >
         <Balancer>
-        Why waste time and money juggling five different tools? Templatize gives you a proven system to curate, templatize, create, and schedule from one streamlined platform.
+        Stop juggling multiple tools to keep up with your content strategy. Templatiz gives you a proven system to curate, templatize, create, and schedule from one streamlined platform.
         </Balancer>
       </motion.p>
       <motion.div
