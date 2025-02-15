@@ -4,7 +4,7 @@ import React from "react";
 export const Button: React.FC<{
   children?: React.ReactNode;
   className?: string;
-  variant?: "simple" | "outline" | "primary";
+  variant?: "simple" | "outline" | "primary" | "templatize";
   as?: React.ElementType;
   [x: string]: any;
 }> = ({
@@ -21,6 +21,8 @@ export const Button: React.FC<{
       ? "bg-white relative z-10 hover:bg-black/90 hover:shadow-xl  text-black border border-black hover:text-white text-sm md:text-sm transition font-medium duration-200  rounded-full px-4 py-2  flex items-center justify-center"
       : variant === "primary"
       ? "bg-neutral-900 relative z-10 hover:bg-black/90  border border-transparent text-white text-sm md:text-sm transition font-medium duration-200  rounded-full px-4 py-2  flex items-center justify-center shadow-[0px_-1px_0px_0px_#FFFFFF40_inset,_0px_1px_0px_0px_#FFFFFF40_inset]"
+      : variant === "templatize"
+      ? "fixed right-[320px] top-4 z-50 bg-white dark:bg-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-800 text-black dark:text-white text-sm font-medium duration-200 rounded-lg px-4 py-2 flex items-center justify-center shadow-lg border border-neutral-200 dark:border-neutral-700"
       : "";
   return (
     <Tag

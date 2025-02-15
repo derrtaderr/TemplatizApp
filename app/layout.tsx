@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { cn } from "@/lib/utils";
 import { ViewTransitions } from "next-view-transitions";
 import { ThemeProvider } from "@/context/theme-provider";
+import { TemplatizeSidebar } from "@/components/templatize-sidebar";
 
 export const metadata: Metadata = {
   title: "Templatiz - The All-in-One Content OS",
@@ -40,6 +41,7 @@ export default function RootLayout({
             defaultTheme="dark"
           >
             {children}
+            <TemplatizeSidebar />
           </ThemeProvider>
         </body>
       </html>
