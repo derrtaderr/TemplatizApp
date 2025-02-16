@@ -6,9 +6,9 @@ import { HorizontalGradient } from "@/components/horizontal-gradient";
 import { ContactForm } from "@/components/contact";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Templatiz",
+  title: "Contact Us - Your Content Operating System Partner | Templatiz",
   description:
-    "Transform your content into a full ecosystem. Create, repurpose, and share across platforms with AI-powered tools that maintain your authentic voice.",
+    "Let's discuss how Templatiz can transform your content creation into a streamlined operating system. Get personalized guidance on implementing AI-powered workflows that scale your content while maintaining authenticity.",
   openGraph: {
     images: ["https://templatized.io/banner.png"],
   },

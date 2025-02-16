@@ -7,9 +7,9 @@ import { PricingTable } from "./pricing-table";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing - Templatiz",
+  title: "Pricing - Build Your Content Operating System | Templatiz",
   description:
-    "Choose the perfect plan for your content creation needs. From solopreneurs to enterprises, scale your content strategy with our AI-powered platform.",
+    "Choose the perfect plan for your content operating system. From individual creators to enterprise teams, power your content creation with AI-driven templates and workflows.",
   openGraph: {
     images: ["https://templatized.io/banner.png"],
   },

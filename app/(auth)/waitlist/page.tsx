@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Join Waitlist - Templatiz",
+  title: "Join Waitlist - Build Your Content Operating System | Templatiz",
   description:
-    "Be among the first to experience Templatiz. Join our waitlist to get early access and lifetime benefits for our AI-powered content creation platform.",
+    "Be first to experience the future of content creation. Join our waitlist to get early access to Templatiz - your complete content operating system with AI-powered workflows, templates, and tools that scale your content strategy.",
   openGraph: {
     images: ["https://templatized.io/banner.png"],
   },
