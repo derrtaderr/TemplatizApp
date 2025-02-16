@@ -2,9 +2,9 @@ import { SignupForm } from "@/components/signup";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Signup - Templatiz",
+  title: "Sign Up for Templatiz - Content Creation Made Simple",
   description:
-    "Transform your content into a full ecosystem. Create, repurpose, and share across platforms with AI-powered tools that maintain your authentic voice.",
+    "Join Templatiz to unlock the power of AI-driven content creation. Get access to proven templates, automated scheduling, and tools that help you create engaging content 10x faster.",
   openGraph: {
     images: ["https://templatized.io/banner.png"],
   },
