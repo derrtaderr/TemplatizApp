@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { cn } from "@/lib/utils";
 import { ViewTransitions } from "next-view-transitions";
 import { ThemeProvider } from "@/context/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Templatiz - The All-in-One Content OS",
@@ -41,6 +42,7 @@ export default function RootLayout({
           >
             {children}
           </ThemeProvider>
+          <Analytics />
         </body>
       </html>
     </ViewTransitions>
