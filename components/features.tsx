@@ -14,11 +14,11 @@ export function Features() {
     >
       <Header>
         <h2 className="font-sans text-bold text-xl text-center md:text-4xl w-fit mx-auto font-bold tracking-tight text-neutral-8000 dark:text-neutral-100 text-neutral-800">
-        Content Creation Made Smarter
+        The Content OS That Powers Top Creators
         </h2>
       </Header>
       <p className="max-w-lg text-sm text-center mx-auto mt-4 text-neutral-800 dark:text-neutral-100">
-      Why Waste Time Guessing? Let AI Turn Your Ideas Into Platform-Ready Content—FAST!
+      This is the proven playbook used by top creators—now built into an all-in-one Content OS that automates the entire workflow.
       </p>
       <div className="mt-20  grid cols-1 md:grid-cols-5 gap-4 md:auto-rows-[25rem] max-w-7xl mx-auto">
         <Card className="flex flex-col justify-between md:col-span-3">
@@ -26,18 +26,18 @@ export function Features() {
             <SkeletonOne />
           </CardSkeletonBody>
           <CardContent className="h-40">
-            <CardTitle>One-click Publishing</CardTitle>
+            <CardTitle>Post, Track, & Grow on Autopilot</CardTitle>
             <CardDescription>
-            No more juggling scheduling tools and platforms. Templatiz lets you post directly to LinkedIn, Twitter, and more. Schedule your posts in advance or go live with a single click
+            Schedule your content, track engagement trends, and automatically repost your best-performing posts to keep growing without extra effort.
             </CardDescription>
           </CardContent>
         </Card>
 
         <Card className="flex flex-col justify-between md:col-span-2">
           <CardContent className="h-40">
-            <CardTitle>Templatize High-Performing Content</CardTitle>
+            <CardTitle>Find Content That Works—Fast</CardTitle>
             <CardDescription>
-            Why start from scratch when you can reverse-engineer the success of top creators?
+            Stop guessing what to post. Use our Chrome extension to instantly uncover high-performing posts in your niche and turn them into templates for repeatable success.
             </CardDescription>
           </CardContent>
           <CardSkeletonBody>
@@ -55,9 +55,9 @@ export function Features() {
 
         <Card className="flex flex-col justify-between md:col-span-2">
           <CardContent className="h-40">
-            <CardTitle>AI-Assisted Content Creation</CardTitle>
+            <CardTitle>Templatize Winning Posts</CardTitle>
             <CardDescription>
-            Our AI fills in your templates with content tailored to your audience. Every post aligns with your Ideal Customer Profile (ICP), using your voice and message to build deeper connections.
+            Save time by extracting proven content structures from viral posts and creating reusable templates that make posting effortless.
             </CardDescription>
           </CardContent>
           <CardSkeletonBody>
@@ -66,9 +66,9 @@ export function Features() {
         </Card>
         <Card className="flex flex-col justify-between md:col-span-3">
           <CardContent className="h-40">
-            <CardTitle>Stay Organized with Your Content Library</CardTitle>
+            <CardTitle>AI-Powered Content That Writes Itself</CardTitle>
             <CardDescription>
-            Manage all your templates, drafts, and posts in one place. Templatiz keeps your entire content strategy organized, predictable, and ready to execute.
+            Let AI fill in your templates with high-impact content in your voice, targeting your ICP—so you can grow 10x faster
             </CardDescription>
           </CardContent>
           <CardSkeletonBody>

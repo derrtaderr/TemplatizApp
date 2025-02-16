@@ -67,7 +67,7 @@ export const Hero = () => {
         className="text-center mt-6 text-base md:text-xl text-muted dark:text-muted-dark max-w-3xl mx-auto relative z-10"
       >
         <Balancer>
-        Stop juggling multiple tools to keep up with your content strategy. Templatiz gives you a proven system to curate, templatize, create, and schedule from one streamlined platform.
+        Your engagement isn’t growing because you don’t have a system. Templatiz gives you the content operating system top creators use—without the time drain.
         </Balancer>
       </motion.p>
       <motion.div
