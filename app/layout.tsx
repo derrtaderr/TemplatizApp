@@ -11,13 +11,52 @@ export const metadata: Metadata = {
   title: "Templatiz - The All-in-One Content OS",
   description:
     "Templatize is your all-in-one Content OS. Discover top-performing posts, create templates, and publish with AI-powered tools designed to save time and scale your brand across platforms.",
+  metadataBase: new URL('https://templatiz.io'),
   openGraph: {
-    images: ["https://templatized.io/banner.png"],
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://templatiz.io',
+    siteName: 'Templatiz',
+    title: 'Templatiz - The All-in-One Content OS',
+    description: 'Templatize is your all-in-one Content OS. Discover top-performing posts, create templates, and publish with AI-powered tools designed to save time and scale your brand across platforms.',
+    images: [
+      {
+        url: 'https://templatiz.io/banner.png',
+        width: 1200,
+        height: 630,
+        alt: 'Templatiz - Content Operating System',
+      }
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Templatiz - The All-in-One Content OS',
+    description: 'Templatize is your all-in-one Content OS. Discover top-performing posts, create templates, and publish with AI-powered tools designed to save time and scale your brand across platforms.',
+    images: ['https://templatiz.io/banner.png'],
+    creator: '@templatiz',
   },
   icons: {
-    icon: "/favicon-16x16.png",
-    shortcut: "/favicon-16x16.png",
-    apple: "/favicon-16x16.png",
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    shortcut: '/favicon-16x16.png',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'mask-icon',
+        url: '/safari-pinned-tab.svg',
+        color: '#5bbad5'
+      }
+    ],
+  },
+  manifest: '/site.webmanifest',
+  other: {
+    'msapplication-TileColor': '#da532c',
+    'theme-color': '#ffffff'
   },
 };
 
