@@ -7,11 +7,11 @@ import { Subheading } from "@/components/subheading";
 import { BlogCard } from "@/components/blog-card";
 
 export const metadata: Metadata = {
-  title: "Blogs - Templatiz",
+  title: "Content Strategy Blog - Templatiz",
   description:
-    "Templatiz is a platform that provides a wide range of templates for your business. Generate templates for your business, and get your business off the ground.",
+    "Learn how top creators scale their content. Discover proven strategies for content templatization, AI-powered creation, and multi-platform growth from the Templatiz team.",
   openGraph: {
-    images: ["https://ai-saas-template-aceternity.vercel.app/banner.png"],
+    images: ["https://templatized.io/banner.png"],
   },
 };
 
