@@ -21,11 +21,9 @@ export default function PricingPage() {
       <Background />
       <Container className="flex flex-col items-center justify-between  pb-20">
         <div className="relative z-20 py-10 md:pt-40">
-          <Heading as="h1">Simple pricing for your ease</Heading>
+          <Heading as="h1">Start Free, Scale When You&apos;re Ready</Heading>
           <Subheading className="text-center">
-            Every AI offers a wide range of services. You can choose the one
-            that suits your needs. Select from your favourite plan and get
-            started instantly.
+            From exploring AI-assisted workflows to full content automation, choose the plan that matches your growth stage. No credit card required to start.
           </Subheading>
         </div>
         <Pricing />
