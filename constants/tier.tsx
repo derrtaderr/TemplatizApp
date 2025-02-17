@@ -21,7 +21,7 @@ export const tiers: Tier[] = [
     description: "For new creators who want to explore AI-assisted content workflows.",
     features: [
       "5 AI-assisted content generations/month",
-      "Manual scheduling (no automation)",
+      "Post directly to Twitter & LinkedIn (manual posting, no scheduling)",
       "Save up to 10 templates in the Template Library",
       "Basic Chrome Extension (capture up to 5 posts/month)",
     ],
