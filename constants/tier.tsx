@@ -3,6 +3,7 @@ export type Tier = {
   id: string;
   href: string;
   priceMonthly: string;
+  priceYearly: string;
   description: string;
   features: string[];
   featured: boolean;
@@ -16,6 +17,7 @@ export const tiers: Tier[] = [
     id: "tier-free",
     href: "#",
     priceMonthly: "$0/mo",
+    priceYearly: "$0/yr",
     description: "For new creators who want to explore AI-assisted content workflows.",
     features: [
       "5 AI-assisted content generations/month",
@@ -32,6 +34,7 @@ export const tiers: Tier[] = [
     id: "tier-starter",
     href: "#",
     priceMonthly: "$19/mo",
+    priceYearly: "$190/yr",
     description: "For solopreneurs and small teams looking to scale their content strategy.",
     features: [
       "Everything in Free Plan, plus:",
@@ -51,6 +54,7 @@ export const tiers: Tier[] = [
     id: "tier-professional",
     href: "#",
     priceMonthly: "$49/mo",
+    priceYearly: "$490/yr",
     description: "For creators, founders, and marketers who want to systemize content creation, grow engagement, and automate their workflow.",
     features: [
       "Everything in Starter Plan, plus:",
@@ -70,6 +74,7 @@ export const tiers: Tier[] = [
     id: "tier-enterprise",
     href: "#",
     priceMonthly: "Custom Pricing",
+    priceYearly: "Custom Pricing",
     description: "For teams, agencies, and high-volume content creators.",
     features: [
       "Everything in Professional Plan, plus:",
