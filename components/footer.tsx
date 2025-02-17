@@ -42,7 +42,7 @@ export const Footer = () => {
     },
     {
       name: "GitHub",
-      href: "https://github.com/derrtaderr",
+      href: "#",
     },
   ];
   return (
@@ -53,7 +53,7 @@ export const Footer = () => {
             <div className="mr-4  md:flex mb-4">
               <Logo />
             </div>
-            <div>Copyright &copy; 2025 Templatiz</div>
+            <div>Copyright &copy; 2025 Templatiz LLC.</div>
             <div className="mt-2">All rights reserved</div>
           </div>
           <div className="grid grid-cols-3 gap-10 items-start mt-10 md:mt-0">
