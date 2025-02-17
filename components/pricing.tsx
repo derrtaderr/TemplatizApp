@@ -7,7 +7,7 @@ import { Button } from "./button";
 export function Pricing() {
   return (
     <div className="relative">
-      <div className="mx-auto mt-4 md:mt-20 grid relative z-20 grid-cols-1 gap-4 items-center md:grid-cols-2 xl:grid-cols-4">
+      <div className="mx-auto mt-4 md:mt-20 grid relative z-20 grid-cols-1 gap-4 items-start md:grid-cols-2 xl:grid-cols-4">
         {tiers.map((tier, tierIdx) => (
           <div
             key={tier.id}
@@ -15,10 +15,10 @@ export function Pricing() {
               tier.featured
                 ? "relative bg-[radial-gradient(164.75%_100%_at_50%_0%,#334155_0%,#0F172A_48.73%)]  shadow-2xl"
                 : " bg-white dark:bg-black",
-              "rounded-lg px-6 py-8 sm:mx-8 lg:mx-0  h-full flex flex-col justify-between"
+              "rounded-lg px-6 py-8 sm:mx-8 lg:mx-0 min-h-[750px] flex flex-col justify-between"
             )}
           >
-            <div className="">
+            <div>
               <h3
                 id={tier.id}
                 className={cn(
@@ -47,7 +47,7 @@ export function Pricing() {
                   tier.featured
                     ? "text-neutral-300"
                     : "text-neutral-600 dark:text-neutral-300",
-                  "mt-6 text-sm leading-7  h-12 md:h-12 xl:h-12"
+                  "mt-6 text-sm leading-7 min-h-[84px]"
                 )}
               >
                 {tier.description}
@@ -58,7 +58,7 @@ export function Pricing() {
                   tier.featured
                     ? "text-neutral-300"
                     : "text-neutral-600 dark:text-neutral-300",
-                  "mt-8 space-y-3 text-sm leading-6 sm:mt-10"
+                  "mt-8 space-y-3 text-sm leading-6"
                 )}
               >
                 {tier.features.map((feature) => (
