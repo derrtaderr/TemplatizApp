@@ -2,41 +2,12 @@
 import { IconCircleCheckFilled } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { tiers } from "@/constants/tier";
-import { useState } from "react";
-import { motion } from "framer-motion";
 import { Button } from "./button";
 
 export function Pricing() {
-  const [active, setActive] = useState("monthly");
-  const tabs = [
-    { name: "Monthly", value: "monthly" },
-    { name: "Yearly", value: "yearly" },
-  ];
-
   return (
     <div className="relative">
-      <div className="flex items-center justify-center bg-neutral-100 dark:bg-neutral-800  w-fit mx-auto mb-12 rounded-md overflow-hidden">
-        {tabs.map((tab) => (
-          <button
-            key={tab.value}
-            className={cn(
-              "text-sm font-medium text-gray-500 dark:text-muted-dark p-4  rounded-md relative",
-              active === tab.value ? " text-white dark:text-black" : ""
-            )}
-            onClick={() => setActive(tab.value)}
-          >
-            {active === tab.value && (
-              <motion.span
-                layoutId="moving-div"
-                transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                className="absolute inset-0 bg-black dark:bg-white"
-              />
-            )}
-            <span className="relative z-10">{tab.name}</span>
-          </button>
-        ))}
-      </div>
-      <div className="mx-auto mt-4 md:mt-20   grid relative z-20 grid-cols-1 gap-4 items-center  md:grid-cols-2 xl:grid-cols-4">
+      <div className="mx-auto mt-4 md:mt-20 grid relative z-20 grid-cols-1 gap-4 items-center md:grid-cols-2 xl:grid-cols-4">
         {tiers.map((tier, tierIdx) => (
           <div
             key={tier.id}
@@ -60,20 +31,16 @@ export function Pricing() {
                 {tier.name}
               </h3>
               <p className="mt-4">
-                <motion.span
-                  initial={{ x: -20, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.2, ease: "easeOut" }}
-                  key={active}
+                <span
                   className={cn(
-                    "text-4xl font-bold tracking-tight  inline-block",
+                    "text-4xl font-bold tracking-tight inline-block",
                     tier.featured
                       ? "text-white"
                       : "text-neutral-900 dark:text-neutral-200"
                   )}
                 >
-                  {active === "monthly" ? tier.priceMonthly : tier.priceYearly}
-                </motion.span>
+                  {tier.priceMonthly}
+                </span>
               </p>
               <p
                 className={cn(
