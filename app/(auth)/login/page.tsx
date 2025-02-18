@@ -2,11 +2,13 @@ import { LoginForm } from "@/components/login";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Login to Templatiz - Your Content OS",
+  title: "Login to Templatiz - Transform Your Content Creation",
   description:
-    "Access your Templatiz dashboard to manage your content templates, schedule posts, and scale your content creation across platforms. Sign in to start growing your audience.",
+    "Access your Templatiz dashboard to create, schedule, and grow your online presence efficiently with our content operating system.",
   openGraph: {
-    images: ["https://templatized.io/banner.png"],
+    title: "Login to Templatiz - Transform Your Content Creation",
+    description: "Access your Templatiz dashboard to create, schedule, and grow your online presence efficiently with our content operating system.",
+    images: ["/template dashboard.png"],
   },
 };
 

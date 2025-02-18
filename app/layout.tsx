@@ -8,31 +8,31 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
-  title: "Templatiz - The All-in-One Content OS",
+  title: "Templatiz - Transform Your Content Creation",
   description:
-    "Templatize is your all-in-one Content OS. Discover top-performing posts, create templates, and publish with AI-powered tools designed to save time and scale your brand across platforms.",
+    "Discover how our content operating system can help you create, schedule, and grow your online presence efficiently.",
   metadataBase: new URL('https://templatiz.io'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://templatiz.io',
     siteName: 'Templatiz',
-    title: 'Templatiz - The All-in-One Content OS',
-    description: 'Templatize is your all-in-one Content OS. Discover top-performing posts, create templates, and publish with AI-powered tools designed to save time and scale your brand across platforms.',
+    title: 'Templatiz - Transform Your Content Creation',
+    description: 'Discover how our content operating system can help you create, schedule, and grow your online presence efficiently.',
     images: [
       {
-        url: 'https://templatiz.io/banner.png',
-        width: 1200,
-        height: 630,
+        url: '/template dashboard.png',
+        width: 1920,
+        height: 1080,
         alt: 'Templatiz - Content Operating System',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Templatiz - The All-in-One Content OS',
-    description: 'Templatize is your all-in-one Content OS. Discover top-performing posts, create templates, and publish with AI-powered tools designed to save time and scale your brand across platforms.',
-    images: ['https://templatiz.io/banner.png'],
+    title: 'Templatiz - Transform Your Content Creation',
+    description: 'Discover how our content operating system can help you create, schedule, and grow your online presence efficiently.',
+    images: ['/template dashboard.png'],
     creator: '@templatiz',
   },
   icons: {
