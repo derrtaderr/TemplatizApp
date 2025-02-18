@@ -10,6 +10,24 @@ export const dynamic = 'force-dynamic';
 // Skip static generation for this page
 export const generateStaticParams = () => [];
 
+// Define the JSON-LD schema
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Join Templatiz Waitlist',
+  description: 'Be first to experience the future of content creation. Join our waitlist to get early access to Templatiz - your complete content operating system with AI-powered workflows, templates, and tools that scale your content strategy.',
+  url: 'https://templatiz.io/waitlist',
+  mainEntity: {
+    '@type': 'WebApplication',
+    name: 'Templatiz',
+    applicationCategory: 'Content Management System',
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/PreOrder'
+    }
+  }
+};
+
 export const metadata: Metadata = {
   title: "Join Waitlist - Build Your Content Operating System | Templatiz",
   description:
@@ -17,6 +35,14 @@ export const metadata: Metadata = {
   openGraph: {
     images: ["/hero.png"],
   },
+  other: {
+    'script': [
+      {
+        type: 'application/ld+json',
+        text: JSON.stringify(jsonLd)
+      }
+    ]
+  }
 };
 
 export default function SignupPage() {

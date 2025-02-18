@@ -7,6 +7,21 @@ import { ThemeProvider } from "@/context/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+// Define the JSON-LD schema
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Templatiz',
+  url: 'https://templatiz.io',
+  logo: 'https://templatiz.io/Templatiz Logo 1.png',
+  description: 'Discover how our content operating system can help you create, schedule, and grow your online presence efficiently.',
+  sameAs: [
+    'https://twitter.com/templatiz',
+    'https://linkedin.com/company/templatiz',
+    'https://github.com/derrtaderr/TemplatizApp'
+  ]
+};
+
 export const metadata: Metadata = {
   title: "Templatiz - Transform Your Content Creation",
   description:
@@ -68,6 +83,12 @@ export default function RootLayout({
   return (
     <ViewTransitions>
       <html lang="en">
+        <head>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+        </head>
         <body
           className={cn(
             GeistSans.className,

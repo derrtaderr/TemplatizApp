@@ -1,6 +1,24 @@
 import { SignupForm } from "@/components/signup";
 import { Metadata } from "next";
 
+// Define the JSON-LD schema
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Sign Up for Templatiz',
+  description: 'Join Templatiz to discover how our content operating system can help you create, schedule, and grow your online presence efficiently.',
+  url: 'https://templatiz.io/signup',
+  mainEntity: {
+    '@type': 'WebApplication',
+    name: 'Templatiz',
+    applicationCategory: 'Content Management System',
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/OnlineOnly'
+    }
+  }
+};
+
 export const metadata: Metadata = {
   title: "Sign Up for Templatiz - Transform Your Content Creation",
   description:
@@ -10,6 +28,14 @@ export const metadata: Metadata = {
     description: "Join Templatiz to discover how our content operating system can help you create, schedule, and grow your online presence efficiently.",
     images: ["/hero.png"],
   },
+  other: {
+    'script': [
+      {
+        type: 'application/ld+json',
+        text: JSON.stringify(jsonLd)
+      }
+    ]
+  }
 };
 
 export default function SignupPage() {
