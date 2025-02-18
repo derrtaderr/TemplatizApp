@@ -99,10 +99,10 @@ export function ContactForm() {
         <div className="mx-auto w-full max-w-md">
           <div>
             <h1 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-black dark:text-white">
-              Get in Touch
+              Contact Us
             </h1>
             <p className="mt-4 text-muted dark:text-muted-dark text-sm max-w-sm">
-              Have questions about Templatiz? Want to learn more about our enterprise solutions? We'd love to hear from you.
+              Have questions about Templatiz? Want to learn more about our content operating system? We are here to help.
             </p>
           </div>
 

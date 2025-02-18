@@ -30,19 +30,11 @@ export default function ContactPage() {
                 imageHeight={200}
               />
             </div>
-            <p
-              className={cn(
-                "font-semibold text-xl text-center dark:text-muted-dark text-muted"
-              )}
-            >
-              Scale Your Content Creation with Templatiz
+            <p className={cn("font-semibold text-xl text-center dark:text-muted-dark text-muted")}>
+              Transform Your Content Creation
             </p>
-            <p
-              className={cn(
-                "font-normal text-base text-center text-neutral-500 dark:text-neutral-200 mt-8"
-              )}
-            >
-              Join thousands of creators using our AI-powered content operating system to create, schedule, and grow their online presence across platforms.
+            <p className={cn("font-normal text-base text-center text-neutral-500 dark:text-neutral-200 mt-8")}>
+              Discover how our content operating system can help you create, schedule, and grow your online presence efficiently.
             </p>
           </div>
           <HorizontalGradient className="top-20" />
