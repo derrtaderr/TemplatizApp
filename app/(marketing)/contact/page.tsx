@@ -1,9 +1,9 @@
 import { Background } from "@/components/background";
 import { Metadata } from "next";
-import { FeaturedTestimonials } from "@/components/featured-testimonials";
 import { cn } from "@/lib/utils";
 import { HorizontalGradient } from "@/components/horizontal-gradient";
 import { ContactForm } from "@/components/contact";
+import { Logo } from "@/components/Logo";
 
 export const metadata: Metadata = {
   title: "Contact Us - Your Content Operating System Partner | Templatiz",
@@ -14,29 +14,35 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PricingPage() {
+export default function ContactPage() {
   return (
     <div className="relative overflow-hidden py-20 md:py-0 px-4 md:px-20 bg-gray-50 dark:bg-black">
       <div className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 relative overflow-hidden">
         <Background />
         <ContactForm />
         <div className="relative w-full z-20 hidden md:flex border-l border-neutral-100 dark:border-neutral-900 overflow-hidden bg-gray-50 dark:bg-black items-center justify-center">
-          <div className="max-w-sm mx-auto">
-            <FeaturedTestimonials />
+          <div className="max-w-sm mx-auto flex flex-col items-center">
+            <div className="w-[300px] h-[240px] flex items-center justify-center">
+              <Logo 
+                className="w-full h-full" 
+                showText={false} 
+                imageWidth={240}
+                imageHeight={200}
+              />
+            </div>
             <p
               className={cn(
                 "font-semibold text-xl text-center dark:text-muted-dark text-muted"
               )}
             >
-              Every AI is used by thousands of users
+              Scale Your Content Creation with Templatiz
             </p>
             <p
               className={cn(
                 "font-normal text-base text-center text-neutral-500 dark:text-neutral-200 mt-8"
               )}
             >
-              With lots of AI applications around, Everything AI stands out with
-              its state of the art Shitposting capabilities.
+              Join thousands of creators using our AI-powered content operating system to create, schedule, and grow their online presence across platforms.
             </p>
           </div>
           <HorizontalGradient className="top-20" />

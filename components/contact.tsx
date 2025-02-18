@@ -20,7 +20,6 @@ import {
   IconBrandLinkedin,
   IconBrandX,
 } from "@tabler/icons-react";
-import Password from "./password";
 import { Button } from "./button";
 import { Logo } from "./Logo";
 
@@ -29,7 +28,7 @@ const formSchema = z.object({
     .string({
       required_error: "Please enter your name",
     })
-    .min(1, "Please enter email"),
+    .min(1, "Please enter your name"),
   email: z
     .string({
       required_error: "Please enter email",
@@ -48,10 +47,10 @@ const formSchema = z.object({
     .min(1, "Please enter your message"),
 });
 
-export type LoginUser = z.infer<typeof formSchema>;
+export type ContactFormData = z.infer<typeof formSchema>;
 
 export function ContactForm() {
-  const form = useForm<LoginUser>({
+  const form = useForm<ContactFormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
@@ -61,30 +60,33 @@ export function ContactForm() {
     },
   });
 
-  async function onSubmit(values: LoginUser) {
+  async function onSubmit(values: ContactFormData) {
     try {
       console.log("submitted form", values);
-    } catch (e) {}
+      // TODO: Implement form submission
+    } catch (e) {
+      console.error("Error submitting form:", e);
+    }
   }
 
   const socials = [
     {
       title: "twitter",
-      href: "https://twitter.com/mannupaaji",
+      href: "https://twitter.com/templatiz",
       icon: (
         <IconBrandX className="h-5 w-5 text-muted dark:text-muted-dark hover:text-black" />
       ),
     },
     {
       title: "github",
-      href: "https://github.com/manuarora700",
+      href: "https://github.com/derrtaderr/TemplatizApp",
       icon: (
         <IconBrandGithub className="h-5 w-5 text-muted dark:text-muted-dark hover:text-black" />
       ),
     },
     {
       title: "linkedin",
-      href: "https://linkedin.com/manuarora28",
+      href: "https://linkedin.com/company/templatiz",
       icon: (
         <IconBrandLinkedin className="h-5 w-5 text-muted dark:text-muted-dark hover:text-black" />
       ),
@@ -97,11 +99,10 @@ export function ContactForm() {
         <div className="mx-auto w-full max-w-md">
           <div>
             <h1 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-black dark:text-white">
-              Contact Us
+              Get in Touch
             </h1>
-            <p className="mt-4 text-muted dark:text-muted-dark  text-sm max-w-sm">
-              Please reach out to us and we will get back to you at the speed of
-              light.
+            <p className="mt-4 text-muted dark:text-muted-dark text-sm max-w-sm">
+              Have questions about Templatiz? Want to learn more about our enterprise solutions? We'd love to hear from you.
             </p>
           </div>
 
@@ -127,7 +128,7 @@ export function ContactForm() {
                           <input
                             id="name"
                             type="name"
-                            placeholder="Manu Arora"
+                            placeholder="Your name"
                             className="block w-full bg-white dark:bg-neutral-900 px-4 rounded-md border-0 py-1.5  shadow-aceternity text-black placeholder:text-gray-400 focus:ring-2 focus:ring-neutral-400 focus:outline-none sm:text-sm sm:leading-6 dark:text-white"
                             {...field}
                           />
@@ -153,7 +154,7 @@ export function ContactForm() {
                           <input
                             id="email"
                             type="email"
-                            placeholder="hello@johndoe.com"
+                            placeholder="you@example.com"
                             className="block w-full bg-white dark:bg-neutral-900 px-4 rounded-md border-0 py-1.5  shadow-aceternity text-black placeholder:text-gray-400 focus:ring-2 focus:ring-neutral-400 focus:outline-none sm:text-sm sm:leading-6 dark:text-white"
                             {...field}
                           />
@@ -179,7 +180,7 @@ export function ContactForm() {
                           <input
                             id="company"
                             type="company"
-                            placeholder="Aceternity Labs, LLC"
+                            placeholder="Your company"
                             className="block w-full bg-white dark:bg-neutral-900 px-4 rounded-md border-0 py-1.5  shadow-aceternity text-black placeholder:text-gray-400 focus:ring-2 focus:ring-neutral-400 focus:outline-none sm:text-sm sm:leading-6 dark:text-white"
                             {...field}
                           />
@@ -198,14 +199,14 @@ export function ContactForm() {
                         htmlFor="message"
                         className="block text-sm font-medium leading-6 text-neutral-700 dark:text-muted-dark"
                       >
-                        message
+                        Message
                       </label>
                       <FormControl>
                         <div className="mt-2">
                           <textarea
                             rows={5}
                             id="message"
-                            placeholder="Enter your message here"
+                            placeholder="Tell us how we can help you streamline your content creation"
                             className="block w-full bg-white dark:bg-neutral-900 px-4 rounded-md border-0 py-1.5  shadow-aceternity text-black placeholder:text-gray-400 focus:ring-2 focus:ring-neutral-400 focus:outline-none sm:text-sm sm:leading-6 dark:text-white"
                             {...field}
                           />
@@ -217,14 +218,14 @@ export function ContactForm() {
                 />
 
                 <div>
-                  <Button className="w-full">Submit</Button>
+                  <Button className="w-full">Send Message</Button>
                 </div>
               </form>
             </div>
           </div>
           <div className="flex items-center justify-center space-x-4 py-4">
             {socials.map((social) => (
-              <Link href={social.href} key={social.title}>
+              <Link href={social.href} key={social.title} target="_blank" rel="noopener noreferrer">
                 {social.icon}
               </Link>
             ))}
