@@ -33,8 +33,8 @@ export const tiers: Tier[] = [
     name: "Starter",
     id: "tier-starter",
     href: "#",
-    priceMonthly: "$19/mo",
-    priceYearly: "$190/yr",
+    priceMonthly: "$29/mo",
+    priceYearly: "$290/yr",
     description: "For solopreneurs and small teams looking to scale their content strategy.",
     features: [
       "Everything in Free Plan, plus:",
@@ -53,8 +53,8 @@ export const tiers: Tier[] = [
     name: "Professional",
     id: "tier-professional",
     href: "#",
-    priceMonthly: "$49/mo",
-    priceYearly: "$490/yr",
+    priceMonthly: "$59/mo",
+    priceYearly: "$590/yr",
     description: "For creators, founders, and marketers who want to systemize content creation, grow engagement, and automate their workflow.",
     features: [
       "Everything in Starter Plan, plus:",
