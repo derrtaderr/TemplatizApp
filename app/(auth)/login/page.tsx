@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Login to Templatiz - Transform Your Content Creation",
     description: "Access your Templatiz dashboard to create, schedule, and grow your online presence efficiently with our content operating system.",
-    images: ["/template dashboard.png"],
+    images: ["/hero.png"],
   },
 };
 

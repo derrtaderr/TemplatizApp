@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: 'Discover how our content operating system can help you create, schedule, and grow your online presence efficiently.',
     images: [
       {
-        url: '/template dashboard.png',
+        url: '/hero.png',
         width: 1920,
         height: 1080,
         alt: 'Templatiz - Content Operating System',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Templatiz - Transform Your Content Creation',
     description: 'Discover how our content operating system can help you create, schedule, and grow your online presence efficiently.',
-    images: ['/template dashboard.png'],
+    images: ['/hero.png'],
     creator: '@templatiz',
   },
   icons: {

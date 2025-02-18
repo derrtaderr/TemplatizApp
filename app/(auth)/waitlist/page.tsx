@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Be first to experience the future of content creation. Join our waitlist to get early access to Templatiz - your complete content operating system with AI-powered workflows, templates, and tools that scale your content strategy.",
   openGraph: {
-    images: ["https://templatized.io/banner.png"],
+    images: ["/hero.png"],
   },
 };
 
