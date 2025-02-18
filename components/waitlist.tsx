@@ -55,11 +55,10 @@ export function SignupForm() {
     
     try {
       if (!supabase) {
-        console.error('Supabase client not initialized. URL:', process.env.NEXT_PUBLIC_SUPABASE_URL);
-        throw new Error('Unable to connect to database - client not initialized');
+        throw new Error('Unable to connect to database. Please try again later.');
       }
 
-      const { data, error } = await supabase
+      const { data, error: supabaseError } = await supabase
         .from('waitlist')
         .insert([
           {
@@ -70,7 +69,7 @@ export function SignupForm() {
         ])
         .select();
 
-      if (error) throw error;
+      if (supabaseError) throw supabaseError;
       
       console.log('Inserted data:', data);
       setIsSuccess(true);

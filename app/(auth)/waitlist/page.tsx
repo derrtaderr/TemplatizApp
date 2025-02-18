@@ -5,8 +5,10 @@ import { HorizontalGradient } from "@/components/horizontal-gradient";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 
-// Tell Next.js this is a dynamic page
-export const dynamic = 'force-dynamic'
+// Tell Next.js this is a dynamic page to prevent static optimization
+export const dynamic = 'force-dynamic';
+// Skip static generation for this page
+export const generateStaticParams = () => [];
 
 export const metadata: Metadata = {
   title: "Join Waitlist - Build Your Content Operating System | Templatiz",
