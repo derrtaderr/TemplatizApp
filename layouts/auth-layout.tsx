@@ -25,14 +25,14 @@ export function AuthLayout({ children }: { children: React.ReactNode }) {
                 "font-semibold text-xl text-center text-muted dark:text-muted-dark mt-12"
               )}
             >
-              Join thousands of users on Templatiz
+              Transform Your Content Creation
             </p>
             <p
               className={cn(
                 "font-normal text-base text-center text-neutral-500 dark:text-neutral-400 mt-8"
               )}
             >
-              Create, schedule, and share content that resonates with your audience.
+              Discover how our content operating system can help you create, schedule, and grow your online presence efficiently.
             </p>
           </div>
           <HorizontalGradient className="top-20" />
