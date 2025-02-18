@@ -1,5 +1,6 @@
 import { SignupForm } from "@/components/signup";
 import { Metadata } from "next";
+import JsonLd from "@/components/json-ld";
 
 // Define the JSON-LD schema
 const jsonLd = {
@@ -27,17 +28,14 @@ export const metadata: Metadata = {
     title: "Sign Up for Templatiz - Transform Your Content Creation",
     description: "Join Templatiz to discover how our content operating system can help you create, schedule, and grow your online presence efficiently.",
     images: ["/hero.png"],
-  },
-  other: {
-    'script': [
-      {
-        type: 'application/ld+json',
-        text: JSON.stringify(jsonLd)
-      }
-    ]
   }
 };
 
 export default function SignupPage() {
-  return <SignupForm />;
+  return (
+    <>
+      <JsonLd data={jsonLd} />
+      <SignupForm />
+    </>
+  );
 }
