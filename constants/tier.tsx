@@ -42,7 +42,7 @@ export const tiers: Tier[] = [
       "Auto-scheduling & content boosting (Twitter & LinkedIn)",
       "Unlimited templates & full template management",
       "Basic analytics: Engagement rates, best times to post",
-      "Streak tracking & gamification for consistency",
+      "Streak tracking for consistency",
       "Limited repurposing (LinkedIn <--> Twitter only)",
     ],
     featured: false,
