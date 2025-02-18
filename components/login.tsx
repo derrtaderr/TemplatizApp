@@ -59,9 +59,6 @@ export function LoginForm() {
             <div className="flex">
               <Logo />
             </div>
-            <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-black dark:text-white">
-              Sign in to your account
-            </h2>
           </div>
 
           <div className="mt-10">

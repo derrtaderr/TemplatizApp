@@ -108,12 +108,6 @@ export function SignupForm() {
             <div className="flex">
               <Logo />
             </div>
-            <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-black dark:text-white">
-              Transform Your Content Creation
-            </h2>
-            <p className="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-              Discover how our content operating system can help you create, schedule, and grow your online presence efficiently.
-            </p>
           </div>
 
           <div className="mt-10">

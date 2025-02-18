@@ -65,9 +65,6 @@ export function SignupForm() {
             <div className="flex">
               <Logo />
             </div>
-            <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-black dark:text-white">
-              Sign up for an account
-            </h2>
           </div>
 
           <div className="mt-10">
