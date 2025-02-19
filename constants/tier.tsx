@@ -18,7 +18,7 @@ export const tiers: Tier[] = [
     href: "#",
     priceMonthly: "$0/mo",
     priceYearly: "$0/yr",
-    description: "For new creators who want to explore AI-assisted content workflows.",
+    description: "New creators exploring AI-assisted workflows.",
     features: [
       "Limited AI content generation",
       "Manual posting to Twitter & LinkedIn",
@@ -35,7 +35,7 @@ export const tiers: Tier[] = [
     href: "#",
     priceMonthly: "$29/mo",
     priceYearly: "$290/yr",
-    description: "For creators ready to streamline their content workflow and grow consistently.",
+    description: "Solopreneurs & small teams looking to scale content.",
     features: [
       "Unlimited AI-assisted content",
       "Auto-scheduling & content boosting",
@@ -54,7 +54,7 @@ export const tiers: Tier[] = [
     href: "#",
     priceMonthly: "$59/mo",
     priceYearly: "$590/yr",
-    description: "For creators and marketers who want to automate their entire content workflow.",
+    description: "Growth-focused creators, founders, & marketers.",
     features: [
       "Everything in Starter, plus:",
       "Advanced AI analytics",
@@ -74,7 +74,7 @@ export const tiers: Tier[] = [
     href: "#",
     priceMonthly: "Custom Pricing",
     priceYearly: "Custom Pricing",
-    description: "For teams and agencies that need custom solutions and dedicated support.",
+    description: "Agencies & teams managing high-volume content.",
     features: [
       "Everything in Professional, plus:",
       "Team Collaboration",
