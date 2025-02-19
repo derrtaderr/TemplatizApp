@@ -41,20 +41,20 @@ export const GridFeatures = () => {
       icon: <IconChartBar />,
     },
     {
-      title: "Write SEO-Optimized Blogs (Coming Soon)",
+      title: "Content Playbook AI-Powered Strategy",
       description:
-        "Write fully optimized blog posts that use SEO best practices to boost discoverability. Our AI analyzes your voice, industry, and target audience to ensure your content is relevant and impactful—ready to attract new visitors and leads.",
+        "Most creators post inconsistently because they don’t have a plan. Templatiz builds your personalized Content Playbook based on your industry, ICP, and offer—so you always know what to post.",
       icon: <IconUsers />,
     },
     {
-      title: "Repurpose Blogs Into Multi-Platform Content (Coming Soon)",
+      title: "YOLO Mode. Full AI Automation",
       description:
-        "Create a blog post and let Templatiz turn it into LinkedIn posts, Twitter threads, and even YouTube videos—all optimized for platform-specific engagement.",
+        "For advanced users, YOLO Mode lets AI run your content operation on autopilot. Once you have 50+ templates, AI writes, schedules, and optimizes your content—so you focus on engagement.",
       icon: <IconClock />,
     },
     {
-      title: "AI Voice Cloning for Video Creation (Coming Soon)",
-      description: "Soon, Templatiz will allow you to generate videos with AI-cloned versions of your voice. Create personalized YouTube Shorts, reels, and explainer videos without needing hours of filming or editing.",
+      title: "Blog-to-Video: Repurpose & Expand Reach (Coming Soon)",
+      description: "Turn blogs into Twitter threads, LinkedIn posts, and AI-narrated videos. Templatiz extracts key insights, creates platform-optimized content, and clones your voice for seamless AI-generated videos.",
       icon: <IconArrowUpRight />,
     },
   ];
