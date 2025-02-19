@@ -14,7 +14,16 @@ export const metadata = {
   title: blog.title,
   description: blog.description,
   openGraph: {
-    images: [Thumbnail],
+    title: blog.title,
+    description: blog.description,
+    type: 'article',
+    url: 'https://templatiz.io/blog/join-the-tempatiz-beta',
+    images: [{
+      url: 'https://templatiz.io/Templatiz.png',
+      width: 1200,
+      height: 630,
+      alt: blog.title,
+    }],
   },
 };
 

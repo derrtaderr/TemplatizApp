@@ -34,20 +34,11 @@ export const metadata: Metadata = {
     siteName: 'Templatiz',
     title: 'Templatiz - Transform Your Content Creation',
     description: 'Discover how our content operating system can help you create, schedule, and grow your online presence efficiently.',
-    images: [
-      {
-        url: '/hero.png',
-        width: 1920,
-        height: 1080,
-        alt: 'Templatiz - Content Operating System',
-      }
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Templatiz - Transform Your Content Creation',
     description: 'Discover how our content operating system can help you create, schedule, and grow your online presence efficiently.',
-    images: ['/hero.png'],
     creator: '@templatiz',
   },
   icons: {

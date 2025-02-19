@@ -14,7 +14,16 @@ export const metadata = {
   title: blog.title,
   description: blog.description,
   openGraph: {
-    images: [Thumbnail],
+    title: blog.title,
+    description: blog.description,
+    type: 'article',
+    url: 'https://templatiz.io/blog/why-templatizing-content-is-the-secret',
+    images: [{
+      url: 'https://templatiz.io/Why Templatizing Content Is the Secret to Consistent, Scalable Growth.png',
+      width: 1200,
+      height: 630,
+      alt: blog.title,
+    }],
   },
 };
 
