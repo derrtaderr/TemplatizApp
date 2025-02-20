@@ -1,78 +1,52 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-export async function POST(request: Request) {
+export async function POST(req: Request) {
   try {
-    const body = await request.json();
-    const { name, email, company, message, to, subject } = body;
+    const { name, email, message } = await req.json();
 
     // Validate required environment variables
-    if (!process.env.EMAIL_HOST || !process.env.EMAIL_USER || !process.env.EMAIL_PASSWORD) {
-      console.error('Missing required email configuration:', {
-        host: !!process.env.EMAIL_HOST,
-        user: !!process.env.EMAIL_USER,
-        password: !!process.env.EMAIL_PASSWORD
-      });
-      throw new Error('Missing required email configuration');
+    const requiredEnvVars = ['EMAIL_HOST', 'EMAIL_PORT', 'EMAIL_USER', 'EMAIL_PASSWORD', 'EMAIL_FROM'];
+    const missingVars = requiredEnvVars.filter(varName => !process.env[varName]);
+    if (missingVars.length > 0) {
+      throw new Error(`Missing required environment variables: ${missingVars.join(', ')}`);
     }
 
-    // Create a transporter using Gmail SMTP
     const transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
-      port: Number(process.env.EMAIL_PORT || 465),
-      secure: true, // Use SSL
+      port: Number(process.env.EMAIL_PORT),
+      secure: true, // use SSL
       auth: {
-        user: process.env.EMAIL_USER,
+        user: process.env.EMAIL_USER, // authenticate with main email
         pass: process.env.EMAIL_PASSWORD,
       },
     });
 
-    // Log connection attempt
-    console.log('Attempting to verify SMTP connection...');
-    
     // Verify SMTP connection
+    console.log('Attempting to verify SMTP connection...');
     await transporter.verify();
-    console.log('SMTP connection verified successfully');
 
-    // Email content with reply-to set to sender's email
     const mailOptions = {
-      from: process.env.EMAIL_FROM,
-      to,
-      replyTo: email,
-      subject,
-      text: `
-Name: ${name}
-Email: ${email}
-Company: ${company}
-
-Message:
-${message}
-      `,
+      from: process.env.EMAIL_FROM, // send from alias
+      to: process.env.EMAIL_USER, // send to main email
+      replyTo: email, // replies will go to the form submitter
+      subject: `New Contact Form Message from ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
       html: `
-<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-  <h3>New Contact Form Submission</h3>
-  <p><strong>Name:</strong> ${name}</p>
-  <p><strong>Email:</strong> ${email}</p>
-  <p><strong>Company:</strong> ${company}</p>
-  <p><strong>Message:</strong></p>
-  <p style="white-space: pre-wrap;">${message}</p>
-</div>
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message.replace(/\n/g, '<br>')}</p>
       `,
     };
 
-    // Log email attempt
-    console.log('Attempting to send email...');
-
-    // Send email
-    const info = await transporter.sendMail(mailOptions);
-    console.log('Email sent successfully:', info.messageId);
-
-    return NextResponse.json({ success: true });
+    await transporter.sendMail(mailOptions);
+    return NextResponse.json({ message: 'Message sent successfully' });
   } catch (error) {
     console.error('Detailed error sending email:', error);
-    const errorMessage = error instanceof Error ? error.message : 'Failed to send message';
     return NextResponse.json(
-      { error: errorMessage },
+      { error: 'Failed to send message. Please try again.' },
       { status: 500 }
     );
   }
