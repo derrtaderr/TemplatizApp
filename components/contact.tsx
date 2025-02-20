@@ -3,6 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { useState } from "react";
 
 import {
   Form,
@@ -60,13 +61,66 @@ export function ContactForm() {
     },
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
   async function onSubmit(values: ContactFormData) {
+    setIsSubmitting(true);
+    setError(null);
+    
     try {
-      console.log("submitted form", values);
-      // TODO: Implement form submission
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...values,
+          to: 'info@templatiz.io',
+          subject: `Contact Form Submission from ${values.name}`,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message. Please try again.');
+      }
+
+      setSubmitSuccess(true);
+      form.reset();
     } catch (e) {
-      console.error("Error submitting form:", e);
+      console.error('Error sending message:', e);
+      setError(e instanceof Error ? e.message : 'Failed to send message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
     }
+  }
+
+  if (submitSuccess) {
+    return (
+      <div className="flex items-center w-full justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+        <div className="mx-auto w-full max-w-md text-center">
+          <div className="flex justify-center">
+            <Logo />
+          </div>
+          <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-black dark:text-white">
+            Message Sent!
+          </h2>
+          <p className="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+            Thank you for reaching out. We&apos;ll get back to you shortly.
+          </p>
+          <Button 
+            className="mt-8"
+            onClick={() => {
+              setSubmitSuccess(false);
+              form.reset();
+            }}
+          >
+            Send Another Message
+          </Button>
+        </div>
+      </div>
+    );
   }
 
   const socials = [
@@ -217,8 +271,19 @@ export function ContactForm() {
                   )}
                 />
 
+                {error && (
+                  <p className="text-sm text-red-500 dark:text-red-400">
+                    {error}
+                  </p>
+                )}
+
                 <div>
-                  <Button className="w-full">Send Message</Button>
+                  <Button 
+                    className="w-full" 
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                  </Button>
                 </div>
               </form>
             </div>
