@@ -7,26 +7,38 @@ export async function POST(request: Request) {
     const { name, email, company, message, to, subject } = body;
 
     // Validate required environment variables
-    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASSWORD) {
-      throw new Error('Missing required SMTP configuration');
+    if (!process.env.EMAIL_HOST || !process.env.EMAIL_USER || !process.env.EMAIL_PASSWORD) {
+      console.error('Missing required email configuration:', {
+        host: !!process.env.EMAIL_HOST,
+        user: !!process.env.EMAIL_USER,
+        password: !!process.env.EMAIL_PASSWORD
+      });
+      throw new Error('Missing required email configuration');
     }
 
     // Create a transporter using Gmail SMTP
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT || 465),
+      host: process.env.EMAIL_HOST,
+      port: Number(process.env.EMAIL_PORT || 465),
       secure: true, // Use SSL
       auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD,
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD,
       },
     });
 
+    // Log connection attempt
+    console.log('Attempting to verify SMTP connection...');
+    
+    // Verify SMTP connection
+    await transporter.verify();
+    console.log('SMTP connection verified successfully');
+
     // Email content with reply-to set to sender's email
     const mailOptions = {
-      from: process.env.SMTP_FROM_EMAIL,
+      from: process.env.EMAIL_FROM,
       to,
-      replyTo: email, // Allow replying directly to the sender
+      replyTo: email,
       subject,
       text: `
 Name: ${name}
@@ -48,15 +60,16 @@ ${message}
       `,
     };
 
-    // Verify SMTP connection
-    await transporter.verify();
+    // Log email attempt
+    console.log('Attempting to send email...');
 
     // Send email
-    await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully:', info.messageId);
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Detailed error sending email:', error);
     const errorMessage = error instanceof Error ? error.message : 'Failed to send message';
     return NextResponse.json(
       { error: errorMessage },
