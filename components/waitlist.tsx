@@ -84,7 +84,7 @@ export function SignupForm() {
 
   if (isSuccess) {
     return (
-      <div className="flex items-center w-full justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+      <div className="flex items-center w-full justify-center px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
         <div className="mx-auto w-full max-w-md text-center relative z-20">
           <div className="flex justify-center">
             <Logo />
@@ -102,7 +102,7 @@ export function SignupForm() {
 
   return (
     <Form {...form}>
-      <div className="flex items-center w-full justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+      <div className="flex items-center w-full justify-center px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
         <div className="mx-auto w-full max-w-md relative z-20">
           <div>
             <div className="flex">

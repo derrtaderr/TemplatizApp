@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
 export default function SignupPage() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden min-h-screen flex items-center justify-center">
       <Background />
       <JsonLd data={jsonLd} />
       <SignupForm />
