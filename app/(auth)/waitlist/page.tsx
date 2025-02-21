@@ -40,9 +40,10 @@ export const metadata: Metadata = {
 
 export default function SignupPage() {
   return (
-    <>
+    <div className="relative overflow-hidden">
+      <Background />
       <JsonLd data={jsonLd} />
       <SignupForm />
-    </>
+    </div>
   );
 }
