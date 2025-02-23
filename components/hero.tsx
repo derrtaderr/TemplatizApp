@@ -30,7 +30,7 @@ export const Hero = () => {
         className="flex justify-center"
       >
         <Badge onClick={() => router.push("/blog/join-the-tempatiz-beta")}>
-        Join the Beta — Shape Templatiz and Get Lifetime Free Access.
+        Join the Beta — Shape Templatiz.
         </Badge>
       </motion.div>
       <motion.h1
