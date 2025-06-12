@@ -30,14 +30,8 @@ export default async function ArticlesIndex() {
           </Subheading>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 relative z-20 w-full mb-10">
-          {blogs.slice(0, 2).map((blog, index) => (
-            <BlogCard blog={blog} key={blog.title + index} />
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full relative z-20">
-          {blogs.slice(2).map((blog, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 relative z-20 w-full mb-10">
+          {blogs.map((blog, index) => (
             <BlogCard blog={blog} key={blog.title + index} />
           ))}
         </div>
