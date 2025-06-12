@@ -5,9 +5,9 @@ import { HorizontalGradient } from "@/components/horizontal-gradient";
 import { WhitepaperForm } from "@/components/whitepaper-form";
 import { Logo } from "@/components/Logo";
 import {
-  IconTarget,
+  IconChartBar,
   IconTrendingUp,
-  IconRobot,
+  IconClock,
 } from "@tabler/icons-react";
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function WhitepaperPage() {
             <div className="bg-white dark:bg-neutral-800 rounded-lg p-6 shadow-lg border border-neutral-200 dark:border-neutral-700">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mr-4">
-                  <IconTarget className="w-5 h-5 text-white" />
+                  <IconChartBar className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   AI Content Isn&apos;t the Problem — Strategy Is
@@ -63,7 +63,7 @@ export default function WhitepaperPage() {
             <div className="bg-white dark:bg-neutral-800 rounded-lg p-6 shadow-lg border border-neutral-200 dark:border-neutral-700">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-lg flex items-center justify-center mr-4">
-                  <IconRobot className="w-5 h-5 text-white" />
+                  <IconClock className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   Autonomous AI, Not Just Automation
