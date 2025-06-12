@@ -32,9 +32,7 @@ export default function WhitepaperPage() {
             {/* Panel 1 */}
             <div className="bg-white dark:bg-neutral-800 rounded-lg p-6 shadow-lg border border-neutral-200 dark:border-neutral-700">
               <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mr-4">
-                  <IconChartBar className="w-5 h-5 text-white" />
-                </div>
+                <IconChartBar className="w-6 h-6 text-neutral-700 dark:text-neutral-300 mr-4" />
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   AI Content Isn&apos;t the Problem — Strategy Is
                 </h3>
@@ -47,9 +45,7 @@ export default function WhitepaperPage() {
             {/* Panel 2 */}
             <div className="bg-white dark:bg-neutral-800 rounded-lg p-6 shadow-lg border border-neutral-200 dark:border-neutral-700">
               <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mr-4">
-                  <IconTrendingUp className="w-5 h-5 text-white" />
-                </div>
+                <IconTrendingUp className="w-6 h-6 text-neutral-700 dark:text-neutral-300 mr-4" />
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   Built on 18+ Months of Data
                 </h3>
@@ -62,9 +58,7 @@ export default function WhitepaperPage() {
             {/* Panel 3 */}
             <div className="bg-white dark:bg-neutral-800 rounded-lg p-6 shadow-lg border border-neutral-200 dark:border-neutral-700">
               <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-lg flex items-center justify-center mr-4">
-                  <IconClock className="w-5 h-5 text-white" />
-                </div>
+                <IconClock className="w-6 h-6 text-neutral-700 dark:text-neutral-300 mr-4" />
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   Autonomous AI, Not Just Automation
                 </h3>
