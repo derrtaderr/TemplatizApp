@@ -44,28 +44,15 @@ export function BlogLayout({
         </div>
       </div>
       <div className="max-w-4xl mx-auto">
-        {blog.image ? (
-          <Image
-            src={blog.image}
-            height="800"
-            width="800"
-            className="h-40 md:h-96 w-full aspect-square object-cover rounded-3xl"
-            alt={blog.title}
-          />
-        ) : (
-          <div className="h-40 md:h-96 w-full aspect-squace rounded-3xl shadow-derek dark:bg-neutral-900 flex items-center justify-center">
-            <Logo />
-          </div>
-        )}
+        <div className="h-40 md:h-96 w-full rounded-3xl bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 flex items-center justify-center p-8">
+          <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold text-center leading-tight">
+            {blog.title}
+          </h1>
+        </div>
       </div>
       <div className="xl:relative">
         <div className="mx-auto max-w-2xl">
           <article className="pb-8">
-            <header className="flex flex-col">
-              <h1 className="mt-8 text-4xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 sm:text-5xl ">
-                {blog.title}
-              </h1>
-            </header>
             <div
               className="mt-8 prose prose-sm dark:prose-invert"
               data-mdx-content
