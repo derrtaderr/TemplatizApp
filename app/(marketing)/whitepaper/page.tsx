@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function WhitepaperPage() {
   return (
-    <div className="relative overflow-hidden py-20 md:py-0 px-4 md:px-20 bg-gray-50 dark:bg-black">
+    <div className="relative overflow-hidden py-20 md:pt-20 px-4 md:px-20 bg-gray-50 dark:bg-black">
       <div className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 relative overflow-hidden">
         <Background />
         <WhitepaperForm />
