@@ -9,25 +9,12 @@ export const BlogCard = ({ blog }: { blog: BlogWithSlug }) => {
     return text.length > length ? text.slice(0, length) + "..." : text;
   };
 
-  // Use brand-consistent neutral gradients
-  const gradients = [
-    "bg-gradient-to-br from-neutral-800 via-neutral-700 to-neutral-900",
-    "bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900", 
-    "bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900",
-    "bg-gradient-to-br from-zinc-800 via-zinc-700 to-zinc-900",
-    "bg-gradient-to-br from-stone-800 via-stone-700 to-stone-900",
-  ];
-
-  // Use blog title length to determine gradient (consistent per blog)
-  const gradientIndex = blog.title.length % gradients.length;
-  const selectedGradient = gradients[gradientIndex];
-
   return (
     <Link
       className="shadow-derek rounded-3xl border dark:border-neutral-800 w-full bg-white dark:bg-neutral-900  overflow-hidden  hover:scale-[1.02] transition duration-200"
       href={`/blog/${blog.slug}`}
     >
-      <div className={`h-52 flex items-center justify-center p-6 ${selectedGradient}`}>
+      <div className="h-52 flex items-center justify-center p-6 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900">
         <h3 className="text-white text-xl md:text-2xl font-bold text-center leading-tight">
           <Balancer>{blog.title}</Balancer>
         </h3>
