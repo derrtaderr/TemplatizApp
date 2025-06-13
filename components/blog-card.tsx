@@ -9,13 +9,13 @@ export const BlogCard = ({ blog }: { blog: BlogWithSlug }) => {
     return text.length > length ? text.slice(0, length) + "..." : text;
   };
 
-  // Create different gradient combinations for variety
+  // Use brand-consistent neutral gradients
   const gradients = [
-    "bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800",
-    "bg-gradient-to-br from-purple-600 via-pink-600 to-purple-800", 
-    "bg-gradient-to-br from-indigo-600 via-blue-600 to-indigo-800",
-    "bg-gradient-to-br from-violet-600 via-purple-600 to-violet-800",
-    "bg-gradient-to-br from-cyan-600 via-blue-600 to-cyan-800",
+    "bg-gradient-to-br from-neutral-800 via-neutral-700 to-neutral-900",
+    "bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900", 
+    "bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900",
+    "bg-gradient-to-br from-zinc-800 via-zinc-700 to-zinc-900",
+    "bg-gradient-to-br from-stone-800 via-stone-700 to-stone-900",
   ];
 
   // Use blog title length to determine gradient (consistent per blog)
@@ -41,9 +41,9 @@ export const BlogCard = ({ blog }: { blog: BlogWithSlug }) => {
             height={20}
             className="rounded-full h-5 w-5"
           />
-          <p className="text-sm font-normal text-muted">{blog.author.name}</p>
+          <p className="text-sm font-normal text-muted dark:text-muted-dark">{blog.author.name}</p>
         </div>
-        <p className="text-left text-sm mt-2 text-muted">
+        <p className="text-left text-sm mt-2 text-muted dark:text-muted-dark">
           {truncate(blog.description, 100)}
         </p>
       </div>

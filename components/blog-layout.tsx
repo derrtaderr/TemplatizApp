@@ -8,6 +8,7 @@ import Image from "next/image";
 import { Logo } from "./Logo";
 import Link from "next/link";
 import { format } from "date-fns";
+
 export function BlogLayout({
   blog,
   children,
@@ -15,6 +16,18 @@ export function BlogLayout({
   blog: BlogWithSlug;
   children: React.ReactNode;
 }) {
+  // Use the same gradient logic as blog cards for consistency
+  const gradients = [
+    "bg-gradient-to-br from-neutral-800 via-neutral-700 to-neutral-900",
+    "bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900", 
+    "bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900",
+    "bg-gradient-to-br from-zinc-800 via-zinc-700 to-zinc-900",
+    "bg-gradient-to-br from-stone-800 via-stone-700 to-stone-900",
+  ];
+
+  const gradientIndex = blog.title.length % gradients.length;
+  const selectedGradient = gradients[gradientIndex];
+
   return (
     <Container className="mt-16 lg:mt-32">
       <div className="flex justify-between items-center px-2 py-8">
@@ -44,7 +57,7 @@ export function BlogLayout({
         </div>
       </div>
       <div className="max-w-4xl mx-auto">
-        <div className="h-40 md:h-96 w-full rounded-3xl bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 flex items-center justify-center p-8">
+        <div className={`h-40 md:h-96 w-full rounded-3xl ${selectedGradient} flex items-center justify-center p-8`}>
           <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold text-center leading-tight">
             {blog.title}
           </h1>
