@@ -8,25 +8,38 @@ import { CTA } from "@/components/cta";
 
 export default function NewHome() {
   return (
-    <div className="relative">
-      <div className="absolute inset-0 h-full w-full overflow-hidden ">
-        <Background />
+    <>
+      {/* Hero Section with Background */}
+      <div className="relative">
+        <div className="absolute inset-0 h-full w-full overflow-hidden ">
+          <Background />
+        </div>
+        <Container>
+          <HeroV2 />
+        </Container>
       </div>
-      <Container className="flex min-h-screen flex-col items-center justify-between ">
-        <HeroV2 />
-        <GridFeatures />
-        <Testimonials />
-      </Container>
       
-      {/* Highlights section with clean background */}
+      {/* Highlights section with clean white background */}
       <HighlightsV2 />
       
+      {/* Other sections with Background */}
+      <div className="relative">
+        <div className="absolute inset-0 h-full w-full overflow-hidden ">
+          <Background />
+        </div>
+        <Container className="flex flex-col items-center justify-between ">
+          <GridFeatures />
+          <Testimonials />
+        </Container>
+      </div>
+      
+      {/* CTA Section with Background */}
       <div className="relative">
         <div className="absolute inset-0 h-full w-full overflow-hidden">
           <Background />
         </div>
         <CTA />
       </div>
-    </div>
+    </>
   );
 } 
