@@ -1,7 +1,7 @@
 import { Container } from "@/components/container";
 import { HeroV2 } from "@/components/hero-v2";
 import { Background } from "@/components/background";
-import { Features } from "@/components/features";
+import { HighlightsV2 } from "@/components/highlights-v2";
 import { GridFeatures } from "@/components/grid-features";
 import { Testimonials } from "@/components/testimonials";
 import { CTA } from "@/components/cta";
@@ -14,7 +14,7 @@ export default function NewHome() {
       </div>
       <Container className="flex min-h-screen flex-col items-center justify-between ">
         <HeroV2 />
-        <Features />
+        <HighlightsV2 />
         <GridFeatures />
         <Testimonials />
       </Container>
