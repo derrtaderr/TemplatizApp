@@ -28,7 +28,7 @@ export const HeroV2 = () => {
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white leading-tight"
             >
               <Balancer>
-                Turn any viral post into your own high-performing content automatically
+                Automate viral content creation with AI
               </Balancer>
             </motion.h1>
             
