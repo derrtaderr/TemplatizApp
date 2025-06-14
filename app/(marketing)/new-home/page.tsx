@@ -2,6 +2,7 @@ import { Container } from "@/components/container";
 import { HeroV2 } from "@/components/hero-v2";
 import { Background } from "@/components/background";
 import { HighlightsV2 } from "@/components/highlights-v2";
+import { HowItWorksV2 } from "@/components/how-it-works-v2";
 import { GridFeatures } from "@/components/grid-features";
 import { Testimonials } from "@/components/testimonials";
 import { CTA } from "@/components/cta";
@@ -21,6 +22,9 @@ export default function NewHome() {
       
       {/* Highlights section with clean white background */}
       <HighlightsV2 />
+      
+      {/* How it Works section with clean white background */}
+      <HowItWorksV2 />
       
       {/* Other sections with Background */}
       <div className="relative">
