@@ -14,10 +14,13 @@ export default function NewHome() {
       </div>
       <Container className="flex min-h-screen flex-col items-center justify-between ">
         <HeroV2 />
-        <HighlightsV2 />
         <GridFeatures />
         <Testimonials />
       </Container>
+      
+      {/* Highlights section with clean background */}
+      <HighlightsV2 />
+      
       <div className="relative">
         <div className="absolute inset-0 h-full w-full overflow-hidden">
           <Background />
