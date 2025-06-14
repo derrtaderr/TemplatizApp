@@ -67,26 +67,28 @@ export const HeroV2 = () => {
                 duration: 0.5,
                 delay: 0.4,
               }}
-              className="flex flex-col items-start space-y-4"
+              className="space-y-4"
             >
-              {/* Button with gradient background */}
-              <div className="relative">
-                {/* Gradient background layer */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 rounded-full blur-sm opacity-75"></div>
-                <Button 
-                  as={Link} 
-                  href="/waitlist"
-                  className="relative text-lg px-8 py-4 h-auto bg-neutral-900 hover:bg-black border-0"
-                >
-                  Start Creating
-                </Button>
-              </div>
-              
-              <div className="flex items-center gap-2 text-sm text-muted dark:text-muted-dark">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                No credit card required
+              {/* Button with gradient background - matching screenshot layout */}
+              <div className="flex items-center gap-6">
+                <div className="relative">
+                  {/* Gradient background layer underneath */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-slate-800 via-slate-700 to-slate-900 rounded-full opacity-75"></div>
+                  <Button 
+                    as={Link} 
+                    href="/waitlist"
+                    className="relative text-lg px-8 py-4 h-auto bg-neutral-900 hover:bg-black border-0"
+                  >
+                    Start Creating
+                  </Button>
+                </div>
+                
+                <div className="flex items-center gap-2 text-sm text-muted dark:text-muted-dark">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  No credit card required
+                </div>
               </div>
             </motion.div>
           </div>
