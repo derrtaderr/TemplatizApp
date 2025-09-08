@@ -6,9 +6,7 @@ import { Container } from "@/components/container";
 const platformLogos = [
   { name: "Twitter", icon: "𝕏" },
   { name: "LinkedIn", icon: "in" },
-  { name: "YouTube", icon: "▶" },
-  { name: "Instagram", icon: "📷" },
-  { name: "TikTok", icon: "🎵" }
+  { name: "YouTube", icon: "▶" }
 ];
 
 export function FeaturesV2() {
@@ -203,25 +201,33 @@ export function FeaturesV2() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h3 className="text-2xl font-bold text-black dark:text-white mb-4">
-            Works with your platforms
-          </h3>
-          <p className="text-muted dark:text-muted-dark mb-8">
-            Integrate with all major social media platforms to capture viral content and publish optimized posts seamlessly.
-          </p>
-          
-          <div className="flex flex-wrap gap-4">
-            {platformLogos.map((platform, index) => (
-              <div
-                key={platform.name}
-                className="flex items-center gap-3 bg-neutral-100 dark:bg-white/10 backdrop-blur-sm border border-neutral-200 dark:border-white/20 rounded-lg px-4 py-3 hover:bg-neutral-200 dark:hover:bg-white/20 transition-colors"
-              >
-                <div className="w-8 h-8 bg-neutral-200 dark:bg-white/20 rounded-lg flex items-center justify-center text-sm font-bold text-neutral-600 dark:text-white">
-                  {platform.icon}
-                </div>
-                <span className="text-neutral-700 dark:text-white font-medium">{platform.name}</span>
+          <div className="bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 p-8 shadow-sm">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              {/* Left side - Copy */}
+              <div>
+                <h3 className="text-2xl font-bold text-black dark:text-white mb-4">
+                  Works with your platforms
+                </h3>
+                <p className="text-muted dark:text-muted-dark leading-relaxed">
+                  Integrate with all major social media platforms to capture viral content and publish optimized posts seamlessly.
+                </p>
               </div>
-            ))}
+              
+              {/* Right side - Platform logos */}
+              <div className="flex flex-wrap gap-4 justify-center lg:justify-end">
+                {platformLogos.map((platform, index) => (
+                  <div
+                    key={platform.name}
+                    className="flex items-center gap-3 bg-neutral-100 dark:bg-white/10 backdrop-blur-sm border border-neutral-200 dark:border-white/20 rounded-lg px-4 py-3 hover:bg-neutral-200 dark:hover:bg-white/20 transition-colors"
+                  >
+                    <div className="w-8 h-8 bg-neutral-200 dark:bg-white/20 rounded-lg flex items-center justify-center text-sm font-bold text-neutral-600 dark:text-white">
+                      {platform.icon}
+                    </div>
+                    <span className="text-neutral-700 dark:text-white font-medium">{platform.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </motion.div>
 

@@ -25,16 +25,17 @@ export const CTA = () => {
 
             <div className="relative px-6 pb-14 pt-20 sm:px-10 sm:pb-20 lg:px-[4.5rem]">
               <h2 className="  text-center text-balance mx-auto text-3xl md:text-5xl font-semibold tracking-[-0.015em] text-white">
-              Ready to Automate & Scale Your Content?
+              Make content creation your competitive edge
               </h2>
-              <p className="mt-4 max-w-[26rem] text-center mx-auto  text-base/6 text-neutral-200">
+              <p className="mt-4 max-w-[32rem] text-center mx-auto  text-base/6 text-neutral-200">
                 <Balancer>
-                Templatiz gives you the proven content playbook—find what works, templatize it, and grow on autopilot.
+                Use Templatiz to systematically capture, evaluate, and recreate viral content that builds your audience while you focus on what matters most.
                 </Balancer>
               </p>
 
-              <div className="relative z-10 mx-auto flex justify-center mt-6">
-                <Button as={Link} href="/waitlist">Join Waitlist</Button>
+              <div className="relative z-10 mx-auto flex flex-col items-center gap-3 mt-6">
+                <Button as={Link} href="/waitlist">Start Creating</Button>
+                <p className="text-sm text-neutral-300">No credit card required</p>
               </div>
             </div>
           </div>
