@@ -29,7 +29,7 @@ export const Hero = () => {
         }}
         className="flex justify-center"
       >
-        <Badge onClick={() => router.push("/blog/join-the-tempatiz-beta")}>
+        <Badge onClick={() => router.push("/waitlist")}>
         Join the Beta — Shape Templatiz.
         </Badge>
       </motion.div>
